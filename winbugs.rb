@@ -29,7 +29,7 @@ class Winbugs < Formula
      o Next, you need to load the inmortality key, execute:
        WinBUGS14 #{etc}/WinBUGS14_immortality_key.txt
      
-     o To open WinBUGS, execute `WinBUGS` in the terminal.
+     o To open WinBUGS, execute `WinBUGS14` in the terminal.
      EOS
   end
 
