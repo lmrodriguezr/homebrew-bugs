@@ -17,7 +17,6 @@ class Winbugs < Formula
     libexec.install Dir["*"]
     bin.mkpath
     bin.install_symlink "../libexec/WinBUGS14" => "WinBUGS14"
-    
     curl "-O", "http://www.mrc-bsu.cam.ac.uk/wp-content/uploads/WinBUGS14_cumulative_patch_No3_06_08_07_RELEASE.txt"
     curl "-O", "http://www.mrc-bsu.cam.ac.uk/wp-content/uploads/WinBUGS14_immortality_key.txt"
     etc.install Dir["WinBUGS14_*.txt"]
@@ -26,10 +25,8 @@ class Winbugs < Formula
   def caveats; <<-EOS.undent
      o WinBUGS14 requires the manual application of a patch, execute:
        WinBUGS14 #{etc}/WinBUGS14_cumulative_patch_No3_06_08_07_RELEASE.txt
-     
      o Next, you need to load the inmortality key, execute:
        WinBUGS14 #{etc}/WinBUGS14_immortality_key.txt
-     
      o To open WinBUGS, execute `WinBUGS14` in the terminal.
      EOS
   end
